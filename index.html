@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fda8afac45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="card">
+        <div class="head">
+            <section class="hero is-info">
+                <div class="hero-body">
+                    <div class="contain">
+                        <div class="title">To Do List</div>
+                        <div class="subtitle">Create your plan</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <form action="#">
+                <input type="text" id="new_text">
+                <button onclick="add()" class="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </form>
+    
+            <ul id="todo">
+    
+            </ul>
+        </div>
+
+        <div class="mode">
+            <span class="icon" onclick="setDarkMode(false)">
+                <i class="fa-regular fa-lightbulb"></i>
+            </span>
+            <span class="icon" onclick="setDarkMode(true)">
+                <i class="fa-solid fa-moon"></i>
+            </span>
+        </div>
+
+    </div>
+
+    <!-- <div onmouseover="this.style.backgroundColor='red'">myDIV.</div> -->
+
+    <script src="script.js"></script>
+    <!-- <script src="newscript.js"></script> -->
+
+
+</body>
+</html>
